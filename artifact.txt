@@ -1,0 +1,2 @@
+1734592640.490     41 192.168.1.5 TCP_MISS/301 398 GET http://kubernetes.io/ - HIER_DIRECT/147.75.40.148 text/plain
+1734592649.191      0 192.168.1.5 TCP_DENIED/403 3885 GET http://google.com/ - HIER_NONE/- text/html
