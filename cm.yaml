@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: squid-config
+data:
+  squid.conf: |
+    http_port 3128
+    acl allowed_sites dstdomain .kubernetes.io
+    acl blocked_sites dstdomain .google.com
+    http_access allow allowed_sites
+    http_access deny blocked_sites
+    http_access allow all
